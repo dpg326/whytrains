@@ -75,7 +75,7 @@ export default function FundingImpactSection() {
                 </p>
                 <PlaceholderBarChart
                   bars={[
-                    { label: "Federal subsidy ($57M)", heightPercent: 17, color: "#2F353B" },
+                    { label: "Federal subsidy ($57M)", heightPercent: 17, color: "#1B3022" },
                     { label: "Economic return ($326.7M)", heightPercent: 100, color: "#D4AF37" },
                   ]}
                   yAxisLabel="Millions of USD (annual)"
@@ -97,9 +97,9 @@ export default function FundingImpactSection() {
                 </p>
                 <PlaceholderBarChart
                   bars={[
-                    { label: "Highways", heightPercent: 100, color: "#2F353B" },
-                    { label: "Public transit", heightPercent: 77, color: "#2F353B" },
-                    { label: "Air travel", heightPercent: 23, color: "#2F353B" },
+                    { label: "Highways", heightPercent: 100, color: "#1B3022" },
+                    { label: "Public transit", heightPercent: 77, color: "#1B3022" },
+                    { label: "Air travel", heightPercent: 23, color: "#1B3022" },
                     { label: "Amtrak", heightPercent: 4, color: "#D4AF37" },
                   ]}
                   yAxisLabel="Billions of USD (annual subsidy)"

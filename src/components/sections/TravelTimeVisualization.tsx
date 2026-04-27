@@ -122,7 +122,7 @@ export default function TravelTimeVisualization() {
                             )}
                           </span>
                         </div>
-                        <div className="flex-1 h-9 bg-primary/[0.04] relative overflow-hidden rounded-sm">
+                        <div className="w-full h-9 sm:w-auto sm:flex-1 bg-primary/[0.04] relative overflow-hidden rounded-sm">
                           <motion.div
                             className="absolute left-0 top-0 h-full rounded-sm"
                             style={{ backgroundColor: mode.color }}

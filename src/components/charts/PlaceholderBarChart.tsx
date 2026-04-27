@@ -71,14 +71,25 @@ export default function PlaceholderBarChart({
             ))}
           </div>
 
-          {/* X-axis labels — rotate on mobile so country names don't collide */}
-          <div className="flex gap-2 sm:gap-6 pl-2 pt-2 sm:pt-3 min-h-[60px] sm:min-h-0">
+          {/* X-axis labels */}
+          <div className="flex gap-2 sm:gap-6 pl-2 pt-2 sm:pt-3">
             {bars.map((bar) => (
               <div
                 key={bar.label}
-                className="flex-1 flex items-start justify-center"
+                className="flex-1 min-w-0 flex justify-center items-start h-20 sm:h-auto"
               >
-                <span className="font-body text-current/60 leading-tight text-[9px] sm:text-xs origin-top-left rotate-[-35deg] sm:rotate-0 whitespace-nowrap sm:whitespace-normal sm:text-center translate-y-1 sm:translate-y-0">
+                {/* Mobile: vertical label, reads bottom-up, stays inside column */}
+                <span
+                  className="sm:hidden font-body text-current/75 leading-tight text-[10px] whitespace-nowrap"
+                  style={{
+                    writingMode: "vertical-rl",
+                    transform: "rotate(180deg)",
+                  }}
+                >
+                  {bar.label}
+                </span>
+                {/* Desktop: horizontal centered label */}
+                <span className="hidden sm:block font-body text-current/60 leading-tight text-xs text-center">
                   {bar.label}
                 </span>
               </div>
