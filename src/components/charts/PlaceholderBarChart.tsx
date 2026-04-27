@@ -26,8 +26,8 @@ export default function PlaceholderBarChart({
   const isInView = useInView(ref, { once: true, margin: "-40px" });
 
   return (
-    <div ref={ref} className="w-full" style={{ height }}>
-      <div className="flex h-full">
+    <div ref={ref} className="w-full max-w-full min-w-0 overflow-hidden" style={{ height }}>
+      <div className="flex h-full min-w-0">
         {/* Y-Axis */}
         <div className="flex flex-col justify-between items-end pr-3 pb-8">
           <span className="text-[10px] font-body text-current/50 tracking-wide">

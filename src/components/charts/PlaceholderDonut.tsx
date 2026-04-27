@@ -30,7 +30,7 @@ export default function PlaceholderDonut({
   let cumulativePercent = 0;
 
   return (
-    <div ref={ref} className="flex flex-col items-center gap-4">
+    <div ref={ref} className="flex flex-col items-center gap-4 max-w-full min-w-0">
       <svg width={size} height={size} className="-rotate-90">
         <circle
           cx={size / 2}
@@ -72,7 +72,7 @@ export default function PlaceholderDonut({
         })}
       </svg>
       {title && (
-        <span className="text-xs font-body text-background/60 tracking-wider uppercase">
+        <span className="text-xs font-body text-background/60 tracking-wider uppercase text-center max-w-full break-words">
           {title}
         </span>
       )}

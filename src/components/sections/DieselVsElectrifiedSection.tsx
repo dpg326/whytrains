@@ -158,9 +158,9 @@ export default function DieselVsElectrifiedSection() {
                 { label: "India (99.4%)", heightPercent: 99, color: "#D4AF37" },
                 { label: "EU Avg (57%)", heightPercent: 57, color: "rgba(212,175,55,0.6)" },
                 { label: "China (74%)", heightPercent: 74, color: "rgba(212,175,55,0.5)" },
-                { label: "UK (38%)", heightPercent: 38, color: "rgba(47,53,59,0.5)" },
-                { label: "World (31%)", heightPercent: 31, color: "rgba(47,53,59,0.4)" },
-                { label: "U.S. (0.93%)", heightPercent: 4, color: "#2F353B" },
+                { label: "UK (38%)", heightPercent: 38, color: "rgba(27,48,34,0.5)" },
+                { label: "World (31%)", heightPercent: 31, color: "rgba(27,48,34,0.4)" },
+                { label: "U.S. (0.93%)", heightPercent: 4, color: "#1B3022" },
               ]}
               yAxisLabel="% of track electrified"
               xAxisLabel="Country / Region"
