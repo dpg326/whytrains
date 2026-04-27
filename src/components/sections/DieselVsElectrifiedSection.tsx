@@ -173,9 +173,11 @@ export default function DieselVsElectrifiedSection() {
         <ScrollReveal delay={0.35}>
           <div className="mt-20 border-l-2 border-accent pl-6 max-w-3xl">
             <p className="font-body text-body/70 text-base leading-relaxed">
-              Emissions aren&rsquo;t the only cost of that gap. Without
-              modern electrified infrastructure, American trains are also
-              much slower than trains in most other countries.
+              Emissions aren&rsquo;t the only cost of underinvestment.
+              American trains are also much slower than trains abroad
+              &mdash; not just for lack of electrification, but because
+              passenger rail shares track with freight, runs on aging
+              alignments, and has no dedicated high-speed corridors.
             </p>
           </div>
         </ScrollReveal>

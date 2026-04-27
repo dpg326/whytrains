@@ -115,7 +115,7 @@ export default function CarbonComparisonSection() {
             <ScrollReveal delay={0.35}>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: "28%", desc: "Transportation share of U.S. direct GHG emissions" },
+                  { value: "29%", desc: "Transportation share of U.S. direct GHG emissions" },
                   { value: "19%", desc: "Increase in transport fossil fuel emissions, 1990–2022" },
                   { value: "47%", desc: "Growth in light-duty vehicle miles traveled, 1990–2022" },
                   { value: "2%", desc: "Rail’s share of all transportation emissions" },
@@ -141,8 +141,9 @@ export default function CarbonComparisonSection() {
         <ScrollReveal delay={0.4}>
           <div className="mt-20 border-l-2 border-accent pl-6 max-w-3xl">
             <p className="font-body text-background/70 text-base leading-relaxed">
-              Those numbers only hold if the trains are electric. Most
-              American trains still run on diesel.
+              And rail already beats every other mode while most American
+              trains still run on diesel. Electrify the network and that
+              advantage grows even larger.
             </p>
           </div>
         </ScrollReveal>

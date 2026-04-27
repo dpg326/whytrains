@@ -39,10 +39,10 @@ export default function ProblemSection() {
               <div className="space-y-6">
                 <div className="border-l-2 border-accent pl-6">
                   <p className="font-body text-body/50 text-base leading-relaxed">
-                    When considering direct emissions, transportation is the
-                    largest contributor of U.S. greenhouse gas emissions at
-                    28%. From 1990 to 2022, total transportation emissions from
-                    fossil fuel combustion increased by 19%.
+                    Transportation is the largest contributor of U.S.
+                    greenhouse gas emissions at 29%. From 1990 to 2022,
+                    total transportation emissions from fossil fuel
+                    combustion increased by 19%.
                   </p>
                 </div>
                 <div className="border-l-2 border-primary/10 pl-6">
@@ -205,7 +205,7 @@ export default function ProblemSection() {
                 {/* Floating annotation boxes — keep inside container on mobile */}
                 <div className="absolute bottom-3 left-3 sm:-bottom-6 sm:-left-8 bg-primary text-background px-3 py-2 sm:px-4 sm:py-3 max-w-[180px] sm:max-w-[200px] z-10">
                   <p className="font-body text-[10px] sm:text-[11px] leading-snug tracking-wide">
-                    28% of U.S. direct greenhouse gas emissions come from transportation
+                    29% of U.S. direct greenhouse gas emissions come from transportation
                   </p>
                 </div>
 

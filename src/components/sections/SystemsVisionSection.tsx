@@ -318,7 +318,7 @@ export default function SystemsVisionSection() {
             },
             {
               title: "Cars off two highways",
-              desc: "I-78 and the Northeast Extension carry tens of thousands of vehicles daily between these cities. A 60-minute train ride takes pressure off both, cutting congestion, crashes, and emissions.",
+              desc: "I-78 and the Northeast Extension carry tens of thousands of vehicles daily between these cities. A sub-90-minute train ride between Philadelphia and New York takes pressure off both, cutting congestion, crashes, and emissions.",
             },
             {
               title: "A model for the rest of the U.S.",

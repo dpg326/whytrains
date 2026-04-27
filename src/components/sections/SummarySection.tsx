@@ -8,7 +8,7 @@ const points = [
     title: "Dirtier trains",
     stat: "0.93%",
     statLabel: "of U.S. rail track is electrified",
-    body: "Transportation is responsible for 29% of U.S. greenhouse gas emissions. Rail produces just 2% of that, but only when it runs on electricity. The world average for electrified track is 31%. The EU averages 57%. Switzerland and India are at or near 100%. Most American trains still burn diesel.",
+    body: "Transportation is responsible for 29% of U.S. greenhouse gas emissions. Rail produces just 2% of that — and that is despite most American trains still running on diesel. The world average for electrified track is 31%. The EU averages 57%. Switzerland and India are at or near 100%. Electrifying U.S. rail would push that 2% even lower.",
   },
   {
     number: "02",
@@ -29,7 +29,7 @@ const points = [
     title: "Missing trains",
     stat: "700k",
     statLabel: "people in the Lehigh Valley with no passenger rail",
-    body: "Pennsylvania's third-largest metro sits between two of the busiest rail markets in the country. Its line was discontinued in 1984. Dozens of similar corridors have no service at all, forcing residents into cars and feeding decades of suburban sprawl.",
+    body: "Pennsylvania's third-largest metro sits between two of the busiest rail markets in the country. Its last passenger train ran in 1967 under the Aldene Plan. Dozens of similar corridors have no service at all, forcing residents into cars and feeding decades of suburban sprawl.",
   },
   {
     number: "05",
