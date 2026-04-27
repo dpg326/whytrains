@@ -67,19 +67,25 @@ export default function SummarySection() {
         <div className="space-y-px bg-primary/10">
           {points.map((p, i) => (
             <ScrollReveal key={p.number} delay={i * 0.1}>
-              <div className="bg-background grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 p-8 sm:p-10 items-start">
-                {/* Number + title */}
-                <div className="md:col-span-3">
-                  <p className="font-body text-[11px] tracking-[0.25em] uppercase text-accent mb-3">
-                    {p.number}
+              <div className="bg-background grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-10 p-6 sm:p-8 md:p-10 items-start">
+                {/* Number + title + stat side-by-side on mobile */}
+                <div className="md:col-span-3 flex items-baseline justify-between md:block gap-4">
+                  <div>
+                    <p className="font-body text-[11px] tracking-[0.25em] uppercase text-accent mb-2 md:mb-3">
+                      {p.number}
+                    </p>
+                    <h3 className="font-heading text-xl sm:text-2xl text-primary leading-tight">
+                      {p.title}
+                    </h3>
+                  </div>
+                  {/* Mobile-only inline stat */}
+                  <p className="md:hidden font-heading text-3xl text-accent leading-none shrink-0">
+                    {p.stat}
                   </p>
-                  <h3 className="font-heading text-2xl text-primary leading-tight">
-                    {p.title}
-                  </h3>
                 </div>
 
-                {/* Stat */}
-                <div className="md:col-span-3 md:border-l md:border-primary/10 md:pl-6">
+                {/* Stat (desktop only) */}
+                <div className="hidden md:block md:col-span-3 md:border-l md:border-primary/10 md:pl-6">
                   <p className="font-heading text-4xl sm:text-5xl text-accent mb-2 leading-none">
                     {p.stat}
                   </p>
@@ -88,9 +94,14 @@ export default function SummarySection() {
                   </p>
                 </div>
 
+                {/* Stat label (mobile only) */}
+                <p className="md:hidden font-body text-body/55 text-xs leading-snug -mt-2">
+                  {p.statLabel}
+                </p>
+
                 {/* Body */}
                 <div className="md:col-span-6">
-                  <p className="font-body text-body/70 text-base leading-relaxed">
+                  <p className="font-body text-body/70 text-sm sm:text-base leading-relaxed">
                     {p.body}
                   </p>
                 </div>

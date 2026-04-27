@@ -57,7 +57,7 @@ export default function SystemsVisionSection() {
         <ScrollReveal delay={0.15}>
           <div
             ref={ref}
-            className="w-full aspect-[16/9] bg-primary rounded-sm relative overflow-hidden"
+            className="w-full aspect-[4/5] sm:aspect-[16/9] bg-primary rounded-sm relative overflow-hidden"
           >
             {/* Grid background */}
             <div className="absolute inset-0 opacity-[0.06]">

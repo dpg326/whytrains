@@ -107,12 +107,21 @@ export default function TravelTimeVisualization() {
                     </span>
                   </div>
 
-                  <div className="space-y-4">
+                  <div className="space-y-5 sm:space-y-4">
                     {modes.map((mode) => (
-                      <div key={mode.label} className="flex items-center gap-4">
-                        <span className="w-16 text-right font-body text-xs text-body/60 shrink-0">
-                          {mode.label}
-                        </span>
+                      <div key={mode.label} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                        <div className="flex items-baseline justify-between sm:block sm:w-16 sm:text-right">
+                          <span className="font-body text-xs text-body/60 shrink-0">
+                            {mode.label}
+                          </span>
+                          {/* On mobile, show time + extra above the bar so they don't get clipped */}
+                          <span className="sm:hidden font-body text-[11px] text-body/70">
+                            {mode.time}
+                            {mode.extra && (
+                              <span className="text-body/45"> · {mode.extra}</span>
+                            )}
+                          </span>
+                        </div>
                         <div className="flex-1 h-9 bg-primary/[0.04] relative overflow-hidden rounded-sm">
                           <motion.div
                             className="absolute left-0 top-0 h-full rounded-sm"
@@ -121,11 +130,12 @@ export default function TravelTimeVisualization() {
                             animate={isInView ? { width: `${mode.width}%` } : { width: 0 }}
                             transition={{ duration: 1, delay: idx * 0.1 + 0.3, ease: [0.21, 0.47, 0.32, 0.98] }}
                           />
-                          <span className="absolute left-3 top-1/2 -translate-y-1/2 font-body text-[11px] text-background font-medium z-10">
+                          {/* Desktop only: in-bar labels */}
+                          <span className="hidden sm:block absolute left-3 top-1/2 -translate-y-1/2 font-body text-[11px] text-background font-medium z-10">
                             {mode.time}
                           </span>
                           {mode.extra && (
-                            <span className="absolute right-3 top-1/2 -translate-y-1/2 font-body text-[11px] text-body/60 z-10">
+                            <span className="hidden sm:block absolute right-3 top-1/2 -translate-y-1/2 font-body text-[11px] text-body/60 z-10">
                               {mode.extra}
                             </span>
                           )}

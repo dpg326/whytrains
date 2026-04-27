@@ -202,15 +202,15 @@ export default function ProblemSection() {
                   </svg>
                 </div>
 
-                {/* Floating annotation boxes */}
-                <div className="absolute -bottom-6 -left-4 sm:-left-8 bg-primary text-background px-4 py-3 max-w-[200px] z-10">
-                  <p className="font-body text-[11px] leading-snug tracking-wide">
+                {/* Floating annotation boxes — keep inside container on mobile */}
+                <div className="absolute bottom-3 left-3 sm:-bottom-6 sm:-left-8 bg-primary text-background px-3 py-2 sm:px-4 sm:py-3 max-w-[180px] sm:max-w-[200px] z-10">
+                  <p className="font-body text-[10px] sm:text-[11px] leading-snug tracking-wide">
                     28% of U.S. direct greenhouse gas emissions come from transportation
                   </p>
                 </div>
 
-                <div className="absolute -top-4 -right-2 sm:-right-6 border border-accent bg-background px-3 py-2 z-10">
-                  <p className="font-body text-[11px] text-accent tracking-wide">
+                <div className="absolute top-3 right-3 sm:-top-4 sm:-right-6 border border-accent bg-background px-2.5 py-1.5 sm:px-3 sm:py-2 max-w-[180px] sm:max-w-none z-10">
+                  <p className="font-body text-[10px] sm:text-[11px] text-accent tracking-wide leading-snug">
                     Rail: only 2% of transport emissions
                   </p>
                 </div>
